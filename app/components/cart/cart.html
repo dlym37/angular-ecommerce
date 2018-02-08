@@ -1,7 +1,11 @@
 
-<div class="line-item"> <!-- Make line-items repeat -->
-    Product and Input goes here
+<div class="line-item" ng-repeat='item in ct.cart'> <!-- Make line-items repeat -->
+    <product product='item.product'
+    button-label='Remove Item'
+    button-action='ct.removeItem(item.product)'></product>
+    
+    <input type='number' min='0' ng-model='item.amount'/>
 </div>
 <div class="total">
-    Total Goes here
+    {{ct.getTotal() | currency}}
 <div>

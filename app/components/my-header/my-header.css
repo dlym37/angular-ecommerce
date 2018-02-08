@@ -1,4 +1,4 @@
-/*my-header {
+my-header {
   display: flex;
   align-content: flex-end;
   width: 100%;
@@ -11,4 +11,4 @@ my-header a{
   display: inline-block;
   margin-left: 40px;
   font-family: sans-serif;
-}*/
+}

@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="/app/css/main.css">
+    <link rel="stylesheet" href="/app/components/my-header/my-header.css">
+    <link rel="stylesheet" href="/app/components/product/product.css">
+    <link rel="stylesheet" href="/app/components/cart/cart.css">
+    <link rel="stylesheet" href="/app/components/cart-chip/cart-chip.css">
   </head>
   <body>
-    <div> Replace Me with the my-header componenet once created.</div>
+    <my-header></my-header><!-- No self closing tags for angular-->
     <ui-view></ui-view>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
@@ -24,6 +28,9 @@
     <script src="app/services/productSrvc.js" charset="utf-8"></script>
 
     <!-- Components -->
-    
+    <script src='app/components/my-header/my-header.js'></script>
+    <script src='app/components/product/product.js'></script>
+    <script src='app/components/cart/cart.js'></script>
+    <script src='app/components/cart-chip/cart-chip.js'></script>
   </body>
 </html>

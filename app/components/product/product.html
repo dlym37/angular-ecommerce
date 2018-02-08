@@ -1,6 +1,7 @@
-<h1> Name goes here</h1>
+<h1> {{pd.product.name}}</h1>
 <div class="picture"
     ng-style="{backgroundImage:'url(' + pd.product.imageUrl + ')'}"></div>
 <div class="padded">
-    Desription and price goes here
+    {{pd.product.description}} - {{pd.product.price | currency}}
+    <button ng-if='pd.buttonLabel' ng-click='pd.buttonAction()'>{{pd.buttonLabel}}</button>
 </div>
